@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Untitled</title>
+    <title>👋 Hey Cloud Sky!</title>
     <meta charset="utf-8" />
     <meta
       name="viewport"
@@ -60,10 +60,10 @@
               alt=""
               style="width: 122px; height: 122px"
           /></span>
-          <h1>Untitled</h1>
+          <h1>Introduce Page 介绍页面</h1>
           <transition-group name="fade">
             <div v-show="defaults" key="text">
-              <p>Lorem</p>
+              <p>About Me 关于我</p>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Inventore facere accusamus quae nesciunt at fuga dicta vitae
@@ -91,7 +91,7 @@
               style="opacity: 0.55"
               v-show="backButton"
             >
-              返回
+              Back 返回
             </button>
           </transition-group>
         </header>
@@ -124,14 +124,14 @@
                 v-bind:disabled="(nowPage < startPage || onTransition==1)"
                 @click="navigate(-1)"
               >
-                上一页
+                Previous Page 上一页
               </button>
               <button
                 class="button small"
                 v-bind:disabled="(nowPage >= endPage - 2 || onTransition==1)"
                 @click="navigate(1)"
               >
-                下一页
+                Next Page 下一页
               </button>
             </div>
             <hr key="br" />
@@ -141,7 +141,7 @@
               class="button fit"
               v-bind:disabled="onTransition==1"
             >
-              返回
+              Back 返回
             </button>
           </transition-group>
         </header>
